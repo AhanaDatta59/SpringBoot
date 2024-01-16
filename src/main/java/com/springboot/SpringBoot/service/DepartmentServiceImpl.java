@@ -64,7 +64,7 @@ public class DepartmentServiceImpl implements DepartmentService {
 
     @Override
     public Department fetchDepartmentByName(String departmentName) {
-        //no predefined function in the JPA repository so need to define on own
+
         //return departmentRepository.findBydepartmentName(departmentName);
         return departmentRepository.findBydepartmentNameIgnoreCase(departmentName);
     }
